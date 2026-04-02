@@ -1,8 +1,7 @@
-a, b, c = input().split()
+digits = input().split()
 
-print(a + b + c)
-print(a + c + b)
-print(b + a + c)
-print(b + c + a)
-print(c + a + b)
-print(c + b + a)
+for i in range(3):
+	for j in range(3):
+		for k in range(3):
+			if i != j and j != k and i != k:
+				print(digits[i] + digits[j] + digits[k])
